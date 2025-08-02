@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "status": "curl -s http://localhost:3000/status",
-    "health": "curl -s http://localhost:3000/health"
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -13,3 +11,4 @@
   "dependencies": {}
 
 }
+
