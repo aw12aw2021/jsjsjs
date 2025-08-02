@@ -1,0 +1,15 @@
+{
+  "name": "vpn-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "stop": "pkill -f 'server tunnel' && pkill -f 'web.js' && pkill -f 'api' && pkill -f 'node.*3000'",
+    "status": "curl -s http://localhost:3000/status",
+    "health": "curl -s http://localhost:3000/health"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {}
+}
