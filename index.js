@@ -3,7 +3,7 @@ const fs = require('fs');
 const { exec } = require('child_process');
 const crypto = require('crypto');
 
-const PORT = 3000;
+const PORT = 8080;
 const serverToken = process.env.SERVER_TOKEN || 'default_server_token';
 const apiPassword = process.env.API_PASSWORD || 'default_api_password';
 const clientId = process.env.CLIENT_ID || crypto.randomUUID();
@@ -200,4 +200,5 @@ server.listen(PORT, '0.0.0.0', async () => {
 });
 
 process.on('SIGTERM', () => process.exit(0));
+
 process.on('SIGINT', () => process.exit(0));
