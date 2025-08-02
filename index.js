@@ -143,7 +143,7 @@ const server = http.createServer((req, res) => {
     });
   } else {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('VPN Service OK');
+    res.end('>>> yeah ......');
   }
 });
 
@@ -202,3 +202,4 @@ server.listen(PORT, '0.0.0.0', async () => {
 process.on('SIGTERM', () => process.exit(0));
 
 process.on('SIGINT', () => process.exit(0));
+
