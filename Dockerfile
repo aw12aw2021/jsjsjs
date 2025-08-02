@@ -28,7 +28,7 @@ RUN chown -R vpnuser:nodejs /app
 USER vpnuser
 
 # 暴露端口
-EXPOSE 3000
+EXPOSE 8080
 
 # 健康检查
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
